@@ -14,77 +14,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-
--- Dumping database structure for erasto_database
-CREATE DATABASE IF NOT EXISTS `erasto_database` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `erasto_database`;
-
--- Dumping structure for table erasto_database.best_fit_func
-CREATE TABLE IF NOT EXISTS `best_fit_func` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `x` int DEFAULT NULL,
-  `y` int DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 -- Dumping data for table erasto_database.best_fit_func: ~0 rows (approximately)
-
--- Dumping structure for table erasto_database.ideal
-CREATE TABLE IF NOT EXISTS `ideal` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `x` int DEFAULT NULL,
-  `y1` int DEFAULT NULL,
-  `y2` int DEFAULT NULL,
-  `y3` int DEFAULT NULL,
-  `y4` int DEFAULT NULL,
-  `y5` int DEFAULT NULL,
-  `y6` int DEFAULT NULL,
-  `y7` int DEFAULT NULL,
-  `y8` int DEFAULT NULL,
-  `y9` int DEFAULT NULL,
-  `y10` int DEFAULT NULL,
-  `y11` int DEFAULT NULL,
-  `y12` int DEFAULT NULL,
-  `y13` int DEFAULT NULL,
-  `y14` int DEFAULT NULL,
-  `y15` int DEFAULT NULL,
-  `y16` int DEFAULT NULL,
-  `y17` int DEFAULT NULL,
-  `y18` int DEFAULT NULL,
-  `y19` int DEFAULT NULL,
-  `y20` int DEFAULT NULL,
-  `y21` int DEFAULT NULL,
-  `y22` int DEFAULT NULL,
-  `y23` int DEFAULT NULL,
-  `y24` int DEFAULT NULL,
-  `y25` int DEFAULT NULL,
-  `y26` int DEFAULT NULL,
-  `y27` int DEFAULT NULL,
-  `y28` int DEFAULT NULL,
-  `y29` int DEFAULT NULL,
-  `y30` int DEFAULT NULL,
-  `y31` int DEFAULT NULL,
-  `y32` int DEFAULT NULL,
-  `y33` int DEFAULT NULL,
-  `y34` int DEFAULT NULL,
-  `y35` int DEFAULT NULL,
-  `y36` int DEFAULT NULL,
-  `y37` int DEFAULT NULL,
-  `y38` int DEFAULT NULL,
-  `y39` int DEFAULT NULL,
-  `y40` int DEFAULT NULL,
-  `y41` int DEFAULT NULL,
-  `y42` int DEFAULT NULL,
-  `y43` int DEFAULT NULL,
-  `y44` int DEFAULT NULL,
-  `y45` int DEFAULT NULL,
-  `y46` int DEFAULT NULL,
-  `y47` int DEFAULT NULL,
-  `y48` int DEFAULT NULL,
-  `y49` int DEFAULT NULL,
-  `y50` int DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=401 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table erasto_database.ideal: ~400 rows (approximately)
 INSERT INTO `ideal` (`id`, `x`, `y1`, `y2`, `y3`, `y4`, `y5`, `y6`, `y7`, `y8`, `y9`, `y10`, `y11`, `y12`, `y13`, `y14`, `y15`, `y16`, `y17`, `y18`, `y19`, `y20`, `y21`, `y22`, `y23`, `y24`, `y25`, `y26`, `y27`, `y28`, `y29`, `y30`, `y31`, `y32`, `y33`, `y34`, `y35`, `y36`, `y37`, `y38`, `y39`, `y40`, `y41`, `y42`, `y43`, `y44`, `y45`, `y46`, `y47`, `y48`, `y49`, `y50`) VALUES
@@ -489,16 +419,6 @@ INSERT INTO `ideal` (`id`, `x`, `y1`, `y2`, `y3`, `y4`, `y5`, `y6`, `y7`, `y8`, 
 	(399, 20, 1, 1, 11, 6, -11, -1, -1, 1, 1, 16, 20, 61, 35, -20, -7, 392, -392, 784, 402, 520, 7762, 7762, -7762, 15525, 23292, 10360, -5640, 7782, 8154, 6983, 20, 4, 20, 1, 10, 99, -20, 0, 393, 95, 40, -39, 3, 0, 13, 5, -5, 0, 1, 1),
 	(400, 20, 1, 0, 11, 5, -11, -1, -1, 0, 1, 17, 20, 62, 35, -20, -7, 396, -396, 792, 406, 524, 7881, 7881, -7881, 15761, 23647, 10503, -5735, 7900, 8277, 7094, 20, 4, 20, 1, 10, 100, -20, 0, 397, 98, 40, -40, 3, 0, 13, 5, -5, 0, 1, 0);
 
--- Dumping structure for table erasto_database.mapping
-CREATE TABLE IF NOT EXISTS `mapping` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `x` int DEFAULT NULL,
-  `y` int DEFAULT NULL,
-  `ideal_function` varchar(255) DEFAULT NULL,
-  `deviation` float DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 -- Dumping data for table erasto_database.mapping: ~10 rows (approximately)
 INSERT INTO `mapping` (`id`, `x`, `y`, `ideal_function`, `deviation`) VALUES
 	(1, -11, -20, 'y41', 1.73695),
@@ -511,14 +431,6 @@ INSERT INTO `mapping` (`id`, `x`, `y`, `ideal_function`, `deviation`) VALUES
 	(8, -10, 19, 'y42', 2.02058),
 	(9, -12, 1, 'y2', 0.329352),
 	(10, -20, -19, 'x', 0.71503);
-
--- Dumping structure for table erasto_database.test
-CREATE TABLE IF NOT EXISTS `test` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `x` float DEFAULT NULL,
-  `y` float DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table erasto_database.test: ~100 rows (approximately)
 INSERT INTO `test` (`id`, `x`, `y`) VALUES
@@ -622,17 +534,6 @@ INSERT INTO `test` (`id`, `x`, `y`) VALUES
 	(98, 16.5, -33.9641),
 	(99, 5.3, -10.2916),
 	(100, 17.9, 28.0785);
-
--- Dumping structure for table erasto_database.train
-CREATE TABLE IF NOT EXISTS `train` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `x` float DEFAULT NULL,
-  `y1` float DEFAULT NULL,
-  `y2` float DEFAULT NULL,
-  `y3` float DEFAULT NULL,
-  `y4` float DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=401 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table erasto_database.train: ~400 rows (approximately)
 INSERT INTO `train` (`id`, `x`, `y1`, `y2`, `y3`, `y4`) VALUES
